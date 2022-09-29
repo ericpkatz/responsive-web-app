@@ -1,0 +1,26 @@
+body {
+  font-family: verdana;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+header {
+  background-color: gray;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+nav > a {
+  color: white;
+}
+
+.hamburger {
+  display: none;
+}
