@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: verdana;
   display: flex;
@@ -23,4 +26,46 @@ nav > a {
 
 .hamburger {
   display: none;
+}
+
+.card {
+  margin: 1rem;
+  background-color: lightgray;
+  width: calc(25% - 2rem);
+  border: solid 1px gray;
+}
+
+.card h3 {
+  background-color: lightskyblue;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.card p {
+  padding: 0.5rem;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer {
+  background-color: gray;
+  text-align: center;
+  padding: 1rem;
+
+}
+
+@media (max-width:768px){
+  .hamburger {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+  .card {
+    width: 100%;
+  }
 }
